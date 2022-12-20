@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidades</title>
+</head>
+<body>
+    <h1>Registro Nacionalidade</h1>
+
+    País de Nascimento: <input type="text" name = "txtpn" id = "txtpn">
+    <input type="button" value="Clicar" onclick="clicar()">
+    <div id="res">
+
+    </div>
+    <script>
+
+        function clicar()
+        {
+            var txtp = window.document.querySelector('input#txtpn ')
+            var res = window.document.querySelector('div#res')
+            var pn = Text(txtp.value)
+            res.innerHTML = `<p> Olá tudo bom`
+        
+        if(pn == 'Brasil') {
+        res.innerHTML = `<p> O que achas de SP ${pn}? </p>`
+        } 
+        else {
+            res.innerHTML = `<p> Seja bem vindo rdtrangeiro espero que goste daqui</p>`
+        }
+    }
+    </script>
+</body>
+</html>

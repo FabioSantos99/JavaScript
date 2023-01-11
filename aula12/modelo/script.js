@@ -17,7 +17,7 @@ if (fano.value.lenght == 0 || fano.value > ano) {
     if (fsex[0].checked) {
         gênero = 'Homem' 
         if (idade >=0 && idade < 10) {
-        res.innerHTML = 'Criança'
+        Image.setAttribute('src', '../aula12/imagens/criança masculina.jpg')
     } 
     else if (idade < 21) {
         res.innerHTML = 'Jovem'

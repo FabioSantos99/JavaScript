@@ -43,7 +43,7 @@ else if (fsex[1].checked) {
             }
         }
         res.style.textAlign = 'center'
-        res.innerHTML = `Detectamos ${gênero} com ${idade} anos.`
+        res.innerHTML = `Detectamos ${gênero} com ${idade} anos.` 
         //res.appendChild(img)
     
     }

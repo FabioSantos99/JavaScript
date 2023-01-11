@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+    <style>
+        body {
+            background-color: blue;
+            color: black;
+        }
+        header {
+            height:200px;
+            width: 500px;
+            background-color: aliceblue;
+        }
+    </style>
+    
+</head>
+<body>
+    <header>
+        <h1>De qual país você é ?</h1>
+            <p>
+                <input type="radio" name="radpais" id="bra">
+                <label for="bra" checke>Brasileiro</label>
+                <input type="radio" name="radpais" id="est">
+                <label for="est">Estrangeiro</label>
+                <input type="button" value="Verificar" onclick="resultado()">
+            </p>
+    </header>
+    <div id="res">
+
+    </div>
+        
+    <script src="roteiro.js"></script>
+</body>
+</html>

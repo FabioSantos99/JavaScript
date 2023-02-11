@@ -5,4 +5,4 @@ function parimpar(n) {
     return 'Impar!'
 }
 }
-console.log(parimpar(359))
+console.log(parimpar(11))

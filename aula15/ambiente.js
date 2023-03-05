@@ -1,9 +1,9 @@
 let num = [5, 8, 2, 9, 3]
-/*num[5] = 6
-num.push(8)
+num[5] = 6
+num.push(11)
 num.length
 num.sort()
-console.log(`O vetor tem ${num}`) */
+console.log(`O vetor tem ${num}`) 
 
 num.sort()
 console.log(num)

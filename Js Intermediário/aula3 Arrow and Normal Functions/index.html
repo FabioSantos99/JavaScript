@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow and Function</title>
+</head>
+<body>
+    <script>
+        function add(x){
+            return x + 5
+
+        }
+        const subtract = (x, y) => {
+            return x - y;
+        }
+        // we can omit the return statement and curly braces
+
+        // When the function is a 1 liner, bracket is optional
+        const multiply = (x, y) => x * y;
+
+        const add2 = num => num + 2;
+
+         let car = {
+            colour: 'red',
+            drive: function(){
+                const inner = function(){
+                    console.log(this);
+                }.bind(this)
+                inner()
+            },
+            honk: function(){
+
+                const inner = () => {
+                    console.log(this);
+                }
+                inner()
+            }
+        }
+        car.drive()
+        car.honk()
+    </script>
+</body>
+</html>

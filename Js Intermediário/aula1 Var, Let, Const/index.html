@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a = "a"
+        var b = "b"
+        const c = "c"
+
+        if(true){
+            console.log(a)
+            // let a = 2
+            var b = 2
+            const c = 2
+        }
+        /*console.log(a)
+        console.log(b)
+        console.log(c) */
+        // conclusion 1: var is not scope safe
+        // how could that cause an issue?
+
+        // var will overwrite existing variable
+
+        var index = 13
+        for(let index = 0; index < 4; index ++){
+            // do something
+    }
+   // console.log(index)
+    /*{
+        var inScopeVar = "in scope"
+        let inScopeLet = "in scope"
+        const inScopeConst = "in scope"
+    } */
+    var inScopeVar
+    {
+        inScopeVar = "in scope"
+        let inScopeLet = "in scope"
+        const inScopeConst = "in scope"
+    }
+    console.log(inScopeVar)
+
+    console.log(aVar)
+    let aLet = "let"
+    var aVar = "var"
+    const aConst = "const"
+
+    var aVar
+
+    console.log(aVar)
+    aVar = "var"
+    // conclusion 3: we cant access a let/const variable before declaration
+
+     console.log(window.aVar)
+     console.log(window.aLet)
+    </script>
+</body>
+</html>

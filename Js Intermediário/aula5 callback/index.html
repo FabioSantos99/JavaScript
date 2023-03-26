@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Callback</title>
+</head>
+<body>
+<script>
+    //callback - a function is passed to another function
+    window.addEventListener('click', function (event) {
+
+    });
+
+  function shopping(budget, afterShoppingCallback) {
+    const spent = 100;
+
+    budget = budget - spent;
+
+    budget = afterShoppingCallback(budget);
+
+    return budget;
+  }
+
+  const leftover = shopping(1565, function(budget){
+    console.log('budget is', budget);
+    console.log('Watch Movie');
+    budget = budget - 230;
+    return budget;
+  })
+  console.log(leftover);
+</script>
+</body> 
+</html>

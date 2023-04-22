@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja</title>
+    <style>
+        *{
+            margin: 0px;
+            padding-left: 12px;
+        }
+        h1 {
+             padding-bottom: 15px;
+        }
+        .compra {
+            background-color: white;
+            border: 1px solid black;
+            position: relative;
+            margin:center;
+            height: 150px;
+            width: 150px;
+    
+        }
+        .bloco{
+            background-color: aqua;
+            justify-content: center;
+            max-width: 200px;
+            border: 1px solid black;
+        }
+        .bloco button {
+            background-attachment: fixed;
+            margin: 13px;
+        }
+
+        button {
+            background-color: orangered;
+            border-radius: 5px;
+            max-width: max-content;
+        }
+    </style>
+</head>
+    <h1>Hortifruti</h1>
+
+    <div class="bloco">
+        <br>
+        <select name="compras" class="compra" id="add"></select> <br>
+        <input type="button" value="Fechar Compra" onclick="fechar()">
+        <br>
+        <button onclick="insert('1.50')">Maça 1.50</button>
+        <button onclick="insert('5.45')">Banana 5.45</button>
+        <button onclick="insert('4.00')">Melancia 4.00</button>
+        <button onclick="insert('7.00')">Laranja 7.00</button>
+        <button onclick="insert('3.55')">Cenoura 3.55</button>
+        <button onclick="insert('7.40')">Abacaxi 7.40</button>
+        <button onclick="clean()">Limpar</button>
+        
+    </div>
+<script src="ambiente.js"></script>
+</body>
+</html>

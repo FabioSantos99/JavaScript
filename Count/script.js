@@ -7,10 +7,11 @@ function countClicks()
     output.innerHTML = count;
 }
 
-var count = 0;
+var numbers = 0;
 var ban = document.getElementById('span#bananas')
+
 function countBan() 
 {
-    count = count + 1;
-    bananas.innerHTML = count;
+    numbers = numbers + 1;
+    bananas.innerHTML = numbers;
 }

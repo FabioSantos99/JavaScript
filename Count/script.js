@@ -1,5 +1,5 @@
 var count = 0;
-var output = document.getElementById('output');
+var output = document.getElementById('macas');
 
 function countClicks()
 {
@@ -8,7 +8,7 @@ function countClicks()
 }
 
 var numbers = 0;
-var ban = document.getElementById('span#bananas')
+var ban = document.getElementById('bananas')
 
 function countBan() 
 {
